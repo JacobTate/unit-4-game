@@ -1,0 +1,11 @@
+#game_num{
+    width:200px;
+    height:100px;
+    background-color: black;
+    color:white;
+}
+img{
+    width:125px;
+    float:left;
+    height:100px;
+}
