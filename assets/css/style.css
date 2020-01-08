@@ -9,3 +9,9 @@ img{
     float:left;
     height:100px;
 }
+#displayed_guess{
+    width:200px;
+    height:100px;
+    background-color: black;
+    color:white;
+}
