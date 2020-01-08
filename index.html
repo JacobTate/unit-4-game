@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href = "assets/css/reset.css">
-    <link rel="stylesheet" href = "assets/css/style.css">
+    <!--the reset css file-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--the costom css file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--the jquery link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--the javascipt link-->
     <script src="assets/javascript/game.js"></script>
-    <title>Index.html</title>
+    <title>Gem Guessing Game</title>
+    <!--the title icon-->
+    <link rel="icon" type="image/png" href="assets/images/gem.png">
 </head>
+
 <body>
-    <div id = game_num>
+    <!--the number that the computer randomly picks goes here-->
+    <div id=game_num>
         0
     </div>
-    <div id = "win-loss">
-        <p id ="wins">wins: 0</p>
+    <!--the number of wins / losses here-->
+    <div id="win-loss">
+        <p id="wins">wins: 0</p>
         <p id="losses">losses: 0</p>
     </div>
-    <div class = "images">
-    <button class = "image" value="1" id = "image1">
-        <img src="assets/images/Diamond.png">
+    <!--the images that are clicked to guess a random number-->
+    <!--a div to hold all of the images-->
+    <!--the images are in button tags so a value could be added-->
+    <div class="images">
+        <!--the first image (diamond) value 1-->
+        <button class="image" value="1" id="image1">
+            <img src="assets/images/Diamond.png">
         </button>
-    
-    <button class = "image" id = "image2" value="2">
-    <img src="assets/images/emerald.jpg">
-    </button>
-    <button class = "image" id = "image3" value="3">
-    <img src="assets/images/ruby.png">
-    </button>
-    <button class = "image" id = "image4" value="4">
-    <img src="assets/images/Sapphire.png">
-    </button>
-</div>
-    <div id = "displayed_guess"></div>
-    
+        <!--the second image (emerald) value 2-->
+        <button class="image" id="image2" value="2">
+            <img src="assets/images/emerald.jpg">
+        </button>
+        <!--the third image (ruby) value 3-->
+        <button class="image" id="image3" value="3">
+            <img src="assets/images/ruby.png">
+        </button>
+        <!--the fourth image (sapphire) value 4-->
+        <button class="image" id="image4" value="4">
+            <img src="assets/images/Sapphire.png">
+        </button>
+    </div>
+    <!--displays the added numbers from the images-->
+    <div id="displayed_guess">0</div>
+
 </body>
+
 </html>
