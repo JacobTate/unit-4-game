@@ -6,26 +6,55 @@ $(document).ready(function () {
     var losses = 0;
 
     //gets a random number 1-100
-    var random_number = Math.floor((Math.random() * 100) + 1);
+    var random = function () {
+        rand_num = Math.floor((Math.random() * 100) + 1);
+        return rand_num
+    };
     // gets random numbers 1-10 for the images
-    var img1_num = Math.floor((Math.random() * 10) + 1);
-    var img2_num = Math.floor((Math.random() * 10) + 1);
-    var img3_num = Math.floor((Math.random() * 10) + 1);
-    var img4_num = Math.floor((Math.random() * 10) + 1);
+    function rand1() {
+        num1 = Math.floor((Math.random() * 10) + 1);
+        return num1
+    }
 
+    function rand2() {
+        num2 = Math.floor((Math.random() * 10) + 1);
+        return num2
+    }
+
+    function rand3() {
+        num3 = Math.floor((Math.random() * 10) + 1);
+        return num3
+    }
+
+    function rand4() {
+        num4 = Math.floor((Math.random() * 10) + 1);
+        return num4
+    }
+
+
+    //reset  function
+    function reset() {
+        guessedNum = 0;
+        random_number = random();
+        img1_num = rand1();
+        img2_num = rand2();
+        img3_num = rand3();
+        img4_num = rand4()
+        $("#game_num").text(rand_num);
+    }
     //displays the number (random_number)
-
+    var random_number = random();
     $("#game_num").text(random_number);
+
+    var img1_num = rand1();
+    var img2_num = rand2();
+    var img3_num = rand3();
+    var img4_num = rand4();
 
     $(".image").on("click", function () {
 
-
-
-
-
         var picked_image = $(this).val();
 
-        console.log(picked_image);
         //looks at the value of the image clicked on to determine what image (button) was clicked
         //image 1 (diamond)
         if (picked_image === "1") {
@@ -51,19 +80,23 @@ $(document).ready(function () {
             //adds the random number 1-10 (img4_num) number to the guessedNum variable
             guessedNum += img4_num;
         }
-    // if the sum of the 4 img numbers is = to the random_number (1-100) run the win code
+        // if the sum of the 4 img numbers is = to the random_number (1-100) run the win code
         if (guessedNum === random_number) {
             alert("you won")
             wins++
+            $("#wins").text("wins: " + wins);
+            reset();
         }
         //else if the sum if the 4 img numbers is greater than random_number ren the loss code
-        else if(guessedNum > random_number){
+        else if (guessedNum > random_number) {
             alert("you lost")
-            losses ++
+            losses++
+            $("#losses").text("losses: " + losses);
+            reset();
         }
 
-$("#displayed_guess").text(guessedNum);
-        //console.log(guessedNum);
+        $("#displayed_guess").text(guessedNum);
+
 
 
 

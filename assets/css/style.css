@@ -3,15 +3,29 @@
     height:100px;
     background-color: black;
     color:white;
+    margin-bottom:0px;
 }
 img{
     width:125px;
     float:left;
     height:100px;
 }
+.images{
+    margin-top:100px; 
+}
 #displayed_guess{
     width:200px;
     height:100px;
     background-color: black;
     color:white;
+}
+#win-loss{
+    width:150px;
+    height:100px;
+    background-color: black;
+    color:white;
+    margin-left:250px;
+    margin-bottom:50px; 
+    top: -10px;
+
 }
