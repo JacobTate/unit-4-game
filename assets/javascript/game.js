@@ -5,7 +5,7 @@ $(document).ready(function () {
     var wins = 0;
     var losses = 0;
 
-    //gets a random number 1-100
+    //gets a random number 1-100 
     var random = function () {
         rand_num = Math.floor((Math.random() * 100) + 1);
         return rand_num
@@ -117,7 +117,7 @@ $(document).ready(function () {
 
     });
 
-
+  
 
 
 });

@@ -1,40 +1,65 @@
+body {
+    background-image: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Geometric-Simple-Background-Image.jpg");
+    background-size: cover;
+}
+
 /*the div for the random number*/
 #game_num {
-    width: 200px;
+
     height: 100px;
-    background-color: black;
+    background-color: mediumseagreen;
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
 }
 
 /*the images*/
-img {
-    width: 125px;
-    float: left;
-    height: 100px;
-}
 
-/*the div that holds the images*/
-.images {
-    margin-top: 100px;
+img{
+    width:200px;
+    height:150px;
 }
 
 /*the score*/
 #displayed_guess {
-    width: 200px;
+    margin-top: 10px;
+    margin-left: 15px;
     height: 100px;
-    background-color: black;
+    background-color: lightseagreen;
     color: white;
 }
 
 /*the wins / losses dislpay*/
 #win-loss {
-    width: 150px;
-    height: 100px;
-    background-color: black;
-    color: white;
-    margin-left: 250px;
-    margin-bottom: 50px;
-    top: -10px;
 
+    height: 100px;
+    background-color: turquoise;
+    color: white;
+    margin-left: 5px;
+
+
+}
+
+#scoreText {
+    height: 30px;
+    background-color: lightseagreen;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#rules {
+    background-color: blanchedalmond;
+    height: 400px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    
+
+}
+#header{
+    height:100px;
+    margin-left:15px;
+    margin-bottom:10px;
+    background-color:chocolate;
+    margin-top:10px;
 }

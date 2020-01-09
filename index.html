@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--the reset css file-->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--the costom css file-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--the jquery link-->
@@ -19,38 +22,75 @@
 </head>
 
 <body>
-    <!--the number that the computer randomly picks goes here-->
-    <div id=game_num>
-        0
+
+
+<!--the container div that holds all of the other divs-->
+    <div class="container">
+        <!--the header-->
+        <div class="row">
+            <div class="col-md-3" id="header">Jewel collector game!</div>
+        </div>
+        <!--the rules-->
+        <div class="row">
+            <div class="col-md-5" id="rules">
+                You will be given a random number at the start of the game.
+                There are four Jewels below. by clicking on a jewel will add a specific ammount of points to Your total score.
+                You win the game by matching Your total score with the random number, you lose the game if Your total score goes above the random number.
+                The value of each jewel is hidden from You until You click on it.
+                Each time when the game starts, the game change the value of each crystal.
+            </div>
+        </div>
+        <div class="row">
+            <!--the number that the computer randomly picks goes here-->
+            <div id=game_num class="col-md-3">
+                0
+            </div>
+
+            <!--the number of wins / losses here-->
+            <div id="win-loss" class="col-md-1">
+                <p id="wins">wins: 0</p>
+                <p id="losses">losses: 0</p>
+            </div>
+        </div>
+        <div class="row">
+            <!--the images that are clicked to guess a random number-->
+            <!--a div to hold all of the images-->
+            <!--the images are in button tags so a value could be added-->
+            <!--the first image (diamond) value 1-->
+            <div class="col-md-2 img">
+                <button class="image" value="1" id="image1">
+                    <img src="assets/images/Diamond.png">
+                </button>
+            </div>
+            <!--the second image (emerald) value 2-->
+            <div class="col-md-2 img">
+                <button class="image" id="image2" value="2">
+                    <img src="assets/images/emerald.jpg">
+                </button>
+            </div>
+            <!--the third image (ruby) value 3-->
+            <div class="col-md-2 img">
+                <button class="image" id="image3" value="3">
+                    <img src="assets/images/ruby.png">
+                </button>
+            </div>
+            <!--the fourth image (sapphire) value 4-->
+            <div class="col-md-2 img">
+                <button class="image" id="image4" value="4">
+                    <img src="assets/images/Sapphire.png">
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3" id="scoreText">Your total score is:</div>
+        </div>
+        <div class="row">
+            <!--displays the added numbers from the images-->
+            <div id="displayed_guess" class="col-md-3">0</div>
+
+        </div>
     </div>
-    <!--the number of wins / losses here-->
-    <div id="win-loss">
-        <p id="wins">wins: 0</p>
-        <p id="losses">losses: 0</p>
-    </div>
-    <!--the images that are clicked to guess a random number-->
-    <!--a div to hold all of the images-->
-    <!--the images are in button tags so a value could be added-->
-    <div class="images">
-        <!--the first image (diamond) value 1-->
-        <button class="image" value="1" id="image1">
-            <img src="assets/images/Diamond.png">
-        </button>
-        <!--the second image (emerald) value 2-->
-        <button class="image" id="image2" value="2">
-            <img src="assets/images/emerald.jpg">
-        </button>
-        <!--the third image (ruby) value 3-->
-        <button class="image" id="image3" value="3">
-            <img src="assets/images/ruby.png">
-        </button>
-        <!--the fourth image (sapphire) value 4-->
-        <button class="image" id="image4" value="4">
-            <img src="assets/images/Sapphire.png">
-        </button>
-    </div>
-    <!--displays the added numbers from the images-->
-    <div id="displayed_guess">0</div>
+
 
 </body>
 
