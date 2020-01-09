@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--the fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
     <!--the reset css file-->
     <link rel="stylesheet" href="assets/css/reset.css">
     <!--bootstrap link-->
@@ -24,26 +26,30 @@
 <body>
 
 
-<!--the container div that holds all of the other divs-->
+    <!--the container div that holds all of the other divs-->
     <div class="container">
         <!--the header-->
         <div class="row">
-            <div class="col-md-3" id="header">Jewel collector game!</div>
+            <div class="col-md-3" id="header">Jewel collector</div>
         </div>
         <!--the rules-->
         <div class="row">
             <div class="col-md-5" id="rules">
-                You will be given a random number at the start of the game.
-                There are four Jewels below. by clicking on a jewel will add a specific ammount of points to Your total score.
-                You win the game by matching Your total score with the random number, you lose the game if Your total score goes above the random number.
-                The value of each jewel is hidden from You until You click on it.
-                Each time when the game starts, the game change the value of each crystal.
+                <strong>Rules.</strong>
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four Jewels below. by clicking on a jewel will add a specific ammount of points to Your
+                    total score.</p>
+                <p>You win the game by matching Your total score with the random number, you lose the game if Your total
+                    score goes above the random number.</p>
+                <p>The value of each jewel is hidden from You until You click on it.</p>
+                <p>Each time when the game starts, the game change the value of each crystal.</p>
             </div>
         </div>
         <div class="row">
             <!--the number that the computer randomly picks goes here-->
             <div id=game_num class="col-md-3">
-                0
+                <p>Number to match:</p>
+                <p id="numToMatch">0</p>
             </div>
 
             <!--the number of wins / losses here-->

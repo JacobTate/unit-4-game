@@ -48,12 +48,12 @@ $(document).ready(function () {
         //sapphire
         img4_num = rand4()
         //displays the new number 1-100
-        $("#game_num").text(rand_num);
+        $("#numToMatch").text(rand_num);
     }
 
     //displays the number (random_number)
     var random_number = random();
-    $("#game_num").text(random_number);
+    $("#numToMatch").text(random_number);
     //calls the functions to get the random number for the images
     var img1_num = rand1();
     var img2_num = rand2();
@@ -111,13 +111,7 @@ $(document).ready(function () {
         //displays the score
         $("#displayed_guess").text(guessedNum);
 
-
-
-
-
     });
-
-  
 
 
 });
