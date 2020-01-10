@@ -81,4 +81,20 @@ img {
     vertical-align: middle;
     line-height: 100px;
 }
-/*the hard mode button*/
+
+/*the div for the button to go to hard mode*/
+#hardButton {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+/*the button to go to hard mode*/
+#hard_button {
+    background-color: lightseagreen;
+    border-color: lightsalmon;
+}
+
+/*colors the text inside the a tag*/
+a {
+    color: black;
+}

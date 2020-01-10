@@ -112,18 +112,18 @@ $(document).ready(function () {
         }
         //displays the score
         $("#displayed_guess").text(guessedNum);
-        
-       
+
+
     });
 
-//normal mode button
-$("#norm_button").on("click", function(){
-    $("#norm").show();
-});
-//hide the normal mode div
-$("#no").on("click", function(){
-    $("#norm").hide();
-});
+    //normal mode button
+    $("#norm_button").on("click", function () {
+        $("#norm").show();
+    });
+    //hide the normal mode div
+    $("#no").on("click", function () {
+        $("#norm").hide();
+    });
 
 
 });

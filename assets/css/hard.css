@@ -10,7 +10,7 @@ body {
     margin-bottom: 10px;
     background-color: #4a4241;
     font-family: 'Gelasio', serif;
-    margin-top:10px;
+    margin-top: 10px;
     text-align: center;
     vertical-align: middle;
     line-height: 100px;
@@ -21,7 +21,7 @@ body {
 
 /*the div that holds the rules*/
 #rules {
-    background-color:#827371 ;
+    background-color: #827371;
     height: 400px;
     margin-left: 15px;
     margin-bottom: 10px;
@@ -50,7 +50,7 @@ body {
     margin-left: 5px;
     font-size: 17px;
     font-weight: 600;
-    color:#ad1f1f;
+    color: #ad1f1f;
 }
 
 /*the images*/
@@ -85,38 +85,47 @@ img {
     line-height: 100px;
     color: red;
 }
-/*the button to go back to normal mode*/
-#normButton{
-    margin-top:10px;
-    margin-left:5px;
-}
-#norm_button{
-    background-color: #330040;
-    border-color: #330040;
-    color:#2568c4;
-}
-#norm{
-    width:400px;
-    height:400px;
-    background-color:black;
-    z-index:999;
-    margin-top:150px;
-    position: fixed;
-    margin-left:20px;
-    margin-top:80px;
-    color:#003e94;
-    font-size: 24px;
-    line-height:40px;
-    font-weight: 600;
-    font-family: 'Gelasio', serif;
+
+/*the div for the button to go back to normal mode*/
+#normButton {
+    margin-top: 10px;
+    margin-left: 5px;
 }
 
-#yes{
-margin-left:20px;
-background-color:#330040 ;
+/*the button to go to normal mode*/
+#norm_button {
+    background-color: #330040;
+    border-color: #330040;
+    color: #2568c4;
 }
-#no{
-    margin-left:20px;
-    color:#2e80f0;
-    background-color:#330040 ;
-    }
+
+/*the normal mode div*/
+#norm {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    z-index: 999;
+    margin-top: 150px;
+    position: fixed;
+    margin-left: 20px;
+    margin-top: 80px;
+    color: #003e94;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+    font-family: 'Gelasio', serif;
+    text-align: center;
+}
+
+/*the button in the normal mode div to go back to normal mode*/
+#yes {
+    margin-left: 20px;
+    background-color: #330040;
+}
+
+/*the button in the normal mode div stay in hard mode div*/
+#no {
+    margin-left: 20px;
+    color: #2e80f0;
+    background-color: #330040;
+}
