@@ -13,18 +13,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--the costom css file-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/hard.css">
     <!--the jquery link-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--the javascipt link-->
-    <script src="assets/javascript/game.js"></script>
-    <title>Gem Guessing Game</title>
+    <script src="assets/javascript/hard.js"></script>
+    <title>Hard mode</title>
     <!--the title icon-->
     <link rel="icon" type="image/png" href="assets/images/gem.png">
 </head>
 
 <body>
-
+   
+    
 
     <!--the container div that holds all of the other divs-->
     <div class="container">
@@ -35,7 +36,7 @@
         <!--the rules-->
         <div class="row">
             <div class="col-md-5" id="rules">
-                <strong>Rules.</strong>
+                <strong>Welcome to hard mode.</strong>
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are four Jewels below. by clicking on a jewel will add a specific ammount of points to Your
                     total score.</p>
@@ -43,6 +44,12 @@
                     score goes above the random number.</p>
                 <p>The value of each jewel is hidden from You until You click on it.</p>
                 <p>Each time when the game starts, the game change the value of each crystal.</p>
+            </div>
+            <div id="norm"><p>Are You sure You want to return to normal mode?</p>
+                <p>When You return to normal mode Your progress will be reset.</p>
+                <p>If you win normal mode 10 times with less than 10 losses you can play hard mode agan.</p>
+                <button id="yes"><a href="index.html">Contenue</a> </button>
+                <button id="no">Stay in hard mode</button>
             </div>
         </div>
         <div class="row">
@@ -90,8 +97,8 @@
         <div class="row">
             <div class="col-md-3" id="scoreText">Your total score is:</div>
             <!--hard mode button-->
-            <div clss="col-md-1" id="hardButton">
-                <button><a href="hardMode.html"> Hard mode </a> </button>
+            <div clss="col-md-1" id="normButton">
+                <button id="norm_button">Back to normal mode</button>
             </div>
         </div>
         <div class="row">
@@ -99,10 +106,9 @@
             <div id="displayed_guess" class="col-md-3">0</div>
 
 
-
         </div>
     </div>
-
+    
 
 </body>
 

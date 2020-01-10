@@ -4,34 +4,32 @@ $(document).ready(function () {
     var guessedNum = 0;
     var wins = 0;
     var losses = 0;
-    // hides the hard mode button
-    $("#hardButton").hide();
-
-    console.log(wins)
+    //hides the normal mode div
+    $("#norm").hide();
 
     //gets a random number 1-100 
     var random = function () {
-        rand_num = Math.floor((Math.random() * 100) + 1);
+        rand_num = Math.floor((Math.random() * 500) + 250);
         return rand_num
     };
     // gets random numbers 1-10 for the images
     function rand1() {
-        num1 = Math.floor((Math.random() * 10) + 1);
+        num1 = Math.floor((Math.random() * 50) + 25);
         return num1
     }
 
     function rand2() {
-        num2 = Math.floor((Math.random() * 10) + 1);
+        num2 = Math.floor((Math.random() * 50) + 25);
         return num2
     }
 
     function rand3() {
-        num3 = Math.floor((Math.random() * 10) + 1);
+        num3 = Math.floor((Math.random() * 50) + 25);
         return num3
     }
 
     function rand4() {
-        num4 = Math.floor((Math.random() * 10) + 1);
+        num4 = Math.floor((Math.random() * 50) + 25);
         return num4
     }
 
@@ -95,7 +93,7 @@ $(document).ready(function () {
         }
         // if the sum of the 4 img numbers is = to the random_number (1-100) run the win code
         if (guessedNum === random_number) {
-            alert("you won")
+            alert("It was luck.")
             //adds to the wins variable
             wins++
             //displays the # of wins
@@ -114,16 +112,18 @@ $(document).ready(function () {
         }
         //displays the score
         $("#displayed_guess").text(guessedNum);
-        //hard mode
-        if (wins === 10 && losses < 10) {
-            $("#hardButton").show();
-        }
-
+        
+       
     });
 
-
-
-
+//normal mode button
+$("#norm_button").on("click", function(){
+    $("#norm").show();
+});
+//hide the normal mode div
+$("#no").on("click", function(){
+    $("#norm").hide();
+});
 
 
 });
