@@ -1,5 +1,5 @@
 # unit-4-game
-#Created by Jacob Tate for homework
+# Created by Jacob Tate for homework
 javascript game
 https://jacobtate.github.io/unit-4-game/
 Rules.
