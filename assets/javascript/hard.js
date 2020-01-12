@@ -9,27 +9,27 @@ $(document).ready(function () {
 
     //gets a random number 1-100 
     var random = function () {
-        rand_num = Math.floor((Math.random() * 500) + 250);
+        rand_num = Math.floor((Math.random() * 100) + 150);
         return rand_num
     };
     // gets random numbers 1-10 for the images
     function rand1() {
-        num1 = Math.floor((Math.random() * 50) + 25);
+        num1 = Math.floor((Math.random() * 10) + 15);
         return num1
     }
 
     function rand2() {
-        num2 = Math.floor((Math.random() * 50) + 25);
+        num2 = Math.floor((Math.random() * 10) + 15);
         return num2
     }
 
     function rand3() {
-        num3 = Math.floor((Math.random() * 50) + 25);
+        num3 = Math.floor((Math.random() * 10) + 15);
         return num3
     }
 
     function rand4() {
-        num4 = Math.floor((Math.random() * 50) + 25);
+        num4 = Math.floor((Math.random() * 10) + 15);
         return num4
     }
 
@@ -38,9 +38,9 @@ $(document).ready(function () {
     function reset() {
         //sets the score to 0
         guessedNum = 0;
-        //resets the random number 1-100
+        //resets the random number 100-250
         random_number = random();
-        //resets the numbers for the images 1-10
+        //resets the numbers for the images 10-25
         //diamond
         img1_num = rand1();
         //emerald
@@ -49,7 +49,7 @@ $(document).ready(function () {
         img3_num = rand3();
         //sapphire
         img4_num = rand4()
-        //displays the new number 1-100
+        //displays the new number 100-250
         $("#numToMatch").text(rand_num);
     }
 
@@ -70,28 +70,28 @@ $(document).ready(function () {
         //image 1 (diamond)
         if (picked_image === "1") {
             console.log(img1_num);
-            //adds the random number 1-10 (img1_num) number to the guessedNum variable
+            //adds the random number 10-25 (img1_num) number to the guessedNum variable
             guessedNum += img1_num;
         }
         //image 2 (emerald)
         else if (picked_image === "2") {
             console.log(img2_num);
-            //adds the random number 1-10 (img2_num) number to the guessedNum variable
+            //adds the random number 10-25 (img2_num) number to the guessedNum variable
             guessedNum += img2_num;
         }
         //image 3 (ruby)
         else if (picked_image === "3") {
             console.log(img3_num);
-            //adds the random number 1-10 (img3_num) number to the guessedNum variable
+            //adds the random number 10-25 (img3_num) number to the guessedNum variable
             guessedNum += img3_num;
         }
         //image 3 (sapphire) 
         else if (picked_image === "4") {
             console.log(img4_num);
-            //adds the random number 1-10 (img4_num) number to the guessedNum variable
+            //adds the random number 10-25 (img4_num) number to the guessedNum variable
             guessedNum += img4_num;
         }
-        // if the sum of the 4 img numbers is = to the random_number (1-100) run the win code
+        // if the sum of the 4 img numbers is = to the random_number (100-250) run the win code
         if (guessedNum === random_number) {
             alert("It was luck.")
             //adds to the wins variable
