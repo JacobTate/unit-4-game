@@ -1,7 +1,8 @@
-# unit-4-game
-# Created by Jacob Tate for homework
+# Guessing game
+# Created by Jacob Tate
 javascript game
 https://jacobtate.github.io/unit-4-game/
+<img src="./assets/images/Screenshot (4).png">
 Rules.<br>
  You will be given a random number at the start of the game.(1-100)<br>
  There are four Jewels on the screen. by clicking on a jewel you will add a specific ammount of points to Your
